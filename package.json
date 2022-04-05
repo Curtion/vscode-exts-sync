@@ -36,6 +36,25 @@
     "*"
   ],
   "icon": "res/icon.png",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "exts-sync",
+          "title": "工作区同步",
+          "icon": "./src/assets/img/logo.svg"
+        }
+      ]
+    },
+    "views": {
+      "exts-sync": [
+        {
+          "id": "workspace-list",
+          "name": "列表"
+        }
+      ]
+    }
+  },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "nr build --watch",
